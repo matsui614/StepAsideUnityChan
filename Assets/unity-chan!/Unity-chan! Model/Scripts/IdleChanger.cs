@@ -66,7 +66,8 @@ namespace UnityChan
 			if (anim.GetBool ("Back")) {
 				// 現在のステートをチェックし、ステート名が違っていたらブーリアンをfalseに戻す
 				currentState = anim.GetCurrentAnimatorStateInfo (0);
-				if (previousState.nameHash != currentState.nameHash) {
+				if (previousState.nameHash != currentState.nameHash) 
+				{
 					anim.SetBool ("Back", false);
 					previousState = currentState;
 				}
